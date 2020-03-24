@@ -1,0 +1,225 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "Tetris.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "游戏(&F)"
+    BEGIN
+        MENUITEM "新游戏(&N)",                  IDM_NEW
+        MENUITEM "暂停(&P)",                    IDM_PAUSE
+        MENUITEM "停止(&S)",                    IDM_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&E)",                    IDM_EXIT
+    END
+    POPUP "设置(&S)"
+    BEGIN
+        POPUP "音乐(&M)"
+        BEGIN
+            MENUITEM "舒缓节奏",                    IDM_MUSIC1
+            MENUITEM "紧张节奏",                    IDM_MUSIC2
+            MENUITEM SEPARATOR
+            MENUITEM "闭关音乐",                    IDM_MUSICOFF
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "内容(&C)",                    IDM_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "关于(&A)",                    IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "1.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "2.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "3.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "4.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "5.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "6.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "7.bmp"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "gameover.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  8, 20, 220, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "关于俄罗斯方块Win32版"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "俄罗斯方块程序Win32版本",IDC_STATIC,49,16,100,9
+    ICON            IDI_ICON1,IDC_STATIC,16,10,20,20
+    LTEXT           "知识覆盖面很全的 Windows 入门程序：",IDC_STATIC,15,38,
+                    161,9,NOT WS_GROUP
+    LTEXT           "涵盖窗口、消息、菜单、工具栏、通用控件、状态栏、",
+                    IDC_STATIC,15,50,192,9
+    LTEXT           "资源、对话框、计时器、自绘按钮、GDI、目录操作、",
+                    IDC_STATIC,15,62,190,9
+    LTEXT           "INI文件等。一切都用最原始的Windows API方式编写。",
+                    IDC_STATIC,15,74,193,9
+    LTEXT           "By: 沉沦  http://www.EasyIDE.cn",IDC_STATIC,15,91,129,8,
+                    WS_DISABLED
+    DEFPUSHBUTTON   "确定",IDOK,159,87,40,14,NOT WS_TABSTOP
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  8, 20, 220, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "俄罗斯方块Win32版 帮助"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "俄罗斯方块程序Win32版本",IDC_STATIC,49,16,100,9
+    ICON            IDI_ICON1,IDC_STATIC,16,10,20,20
+    LTEXT           "键盘操作说明：",IDC_STATIC,15,38,161,9,NOT WS_GROUP
+    LTEXT           "空格键：开始/暂停游戏",IDC_STATIC,15,50,192,9
+    LTEXT           "方向键 左、右、下：控制方块移动",IDC_STATIC,15,62,190,9
+    LTEXT           "方向键 上：方块旋转",IDC_STATIC,15,74,141,9
+    LTEXT           "By: 沉沦  http://www.EasyIDE.cn",IDC_STATIC,16,92,129,
+                    12,WS_DISABLED
+    PUSHBUTTON      "确定",IDOK,161,85,40,14,NOT WS_TABSTOP
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  8, 20, 220, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "俄罗斯方块Win32版本 背景音乐设置"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "俄罗斯方块程序Win32版本",IDC_STATIC,53,19,100,9
+    ICON            IDI_ICON1,IDC_STATIC,16,10,20,20
+    DEFPUSHBUTTON   "确定",IDOK,172,14,40,14
+    PUSHBUTTON      "取消",IDCANCEL,172,35,40,14
+    CONTROL         "舒缓节奏",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,20,42,44,8
+    CONTROL         "紧张节奏",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,69,42,44,8
+    CONTROL         "关闭音乐",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,119,42,45,8
+    LTEXT           "By: 沉沦  http://www.EasyIDE.cn",IDC_STATIC,19,61,129,
+                    12,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE    DISCARDABLE     "Hawker'sSong1.wav"
+IDR_WAVE2               WAVE    DISCARDABLE     "Hawker'sSong2.wav"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

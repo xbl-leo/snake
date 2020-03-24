@@ -1,0 +1,19 @@
+# Microsoft Developer Studio Generated Dependency File, included by Tetris.mak
+
+.\Tetris.cpp : \
+	".\Tetris.h"\
+	"d:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\Resource\Tetris.rc : \
+	".\Resource\1.bmp"\
+	".\Resource\2.bmp"\
+	".\Resource\3.bmp"\
+	".\Resource\4.bmp"\
+	".\Resource\5.bmp"\
+	".\Resource\6.bmp"\
+	".\Resource\7.bmp"\
+	".\Resource\bitmap1.bmp"\
+	".\Resource\gameover.bmp"\
+	".\Resource\Tetris.ico"\
+	
